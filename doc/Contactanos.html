@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacta con nosotros</title>
+    <link rel="stylesheet" href="./../estilos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="fon2">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="icono">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="#" class="enlace">
+            <img src="./../img/logo.png" alt="" class="logo"> 
+        </a>
+        <ul>
+            <li><a class="Inicio" href="./../index.html">Inicio</a></li>
+            <li><a href="./Productos.html">Productos</a></li>
+            <li><a href="./IniciarSesion.html">Acceder</a></li>
+            <li><a href="./Contactanos.html">Contacto</a></li>
+            <li><a href="./PreguntasFrecuentes.html">Preguntas frecuentes</a></li>
+            <li><a href="./AcercaDe.html">Acerca de</a></li>
+        </ul>
+    </nav>
+    <section class="formContacto">
+        <h1>Contactanos:</h1><hr><br>
+        <form action="/action_page.php">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>     
+            <label>Fecha de nacimiento:</label>
+            <input type="date"><br><br><!--fecha-->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label>Fecha y hora de cita:</label>
+            <input type="datetime-local"><br><br>
+            <label>Cuánto te gusta la pág:</label>
+            <input type="range"><br><br><!--rango-->
+            <label>Introduce su número de teléfono:</label>
+            <input type="tel"><br><br> <!--telfn-->
+            <label>Seleccione su provincia:</label>
+          <select>
+            <optgroup label="Extremadura">
+                <option value="Cáceres">Cáceres</option>
+                <option value="Badajoz">Badajoz</option>
+            </optgroup>
+          </select><br><br>
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje"></textarea><br><br>
+          <label>Seleccione archivo:</label>
+            <input type="file"><br><br><!--archivo-->
+            <input type="submit" value="Enviar" href="./../index.html">
+        </form>
+    </section>
+</body>
+</html>
